@@ -1,21 +1,20 @@
 # dnslookup
 Shows Ip address and Family of a website
+Its a sample project I made just to view the IP address of a website and Family it has.
 
 # Language
 Nodejs
 
-# How to use
-1) Clone this to your <b>dcim (For Termux)</b> or <b>Documents folder (For Linux)</b>
-2) You'd need to edit <a href="https://github.com/TermuxHackz/dnslookup/blob/master/dnslookup.js" target="_blank">dnslookup.js</a> and replace "Enter site here" with the name of the site
-Eg: "www.google.com"
+# Author
+AnonyminHack5
 
 # Installation for Termux
 ```
 pkg install node
 pkg install npm
 npm init -y
+npm install prompt-sync
 termux-setup-storage
-cd storage/dcim
 git clone https://github.com/TermuxHackz/dnslookup
 cd dnslookup
 node dnslookup.js
@@ -26,7 +25,7 @@ node dnslookup.js
 sudo apt install nodejs
 sudo apt install npm
 npm init -y
-cd Documents
+npm install prompt-sync
 git clone https://github.com/TermuxHackz/dnslookup
 cd dnslookup
 node dnslookup.js
