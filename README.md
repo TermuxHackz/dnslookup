@@ -5,7 +5,8 @@ Shows Ip address and Family of a website
 Nodejs
 
 # How to use
-You'd need to edit script and replace "Enter site here" with the name of the site
+1) Clone this to your <b>dcim (For Termux)</b> or <b>Documents folder (For Linux)</b>
+2) You'd need to edit <a href="https://github.com/TermuxHackz/dnslookup/blob/master/dnslookup.js" target="_blank">dnslookup.js</a> and replace "Enter site here" with the name of the site
 Eg: "www.google.com"
 
 # Installation for Termux
@@ -13,6 +14,10 @@ Eg: "www.google.com"
 pkg install node
 pkg install npm
 npm init -y
+termux-setup-storage
+cd storage/dcim
+git clone https://github.com/TermuxHackz/dnslookup
+cd dnslookup
 node dnslookup.js
 ```
 
@@ -21,5 +26,8 @@ node dnslookup.js
 sudo apt install nodejs
 sudo apt install npm
 npm init -y
+cd Documents
+git clone https://github.com/TermuxHackz/dnslookup
+cd dnslookup
 node dnslookup.js
 
